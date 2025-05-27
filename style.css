@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(98, 193, 138);
+}
+
+
+
+.box {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+header {
+    width: 100%;
+    z-index: 50;
+    display: inline-block;
+}
+
+header .logo {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px;
+    cursor: pointer;
+    text-shadow: 0px 0px 5px rgb(98, 193, 138);
+}
+
+nav {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+nav {
+    float: right;
+}
+
+nav div {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 10px;
+    margin-bottom: 0;
+}
+
+.t {
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.t:hover {
+    border-bottom: 2px solid rgb(98, 193, 138);
+}
+
+.search {
+    color: rgb(98, 193, 138);
+    border: 2px solid rgb(98, 193, 138);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#search {
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+}
+
+.search i:hover {
+    cursor: pointer;
+}
+
+
+main {
+    z-index: 10;
+    overflow: auto;
+}
+
+main #videobox {
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+main #videobox video {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    border: 2px solid rgb(98, 193, 138);
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width : 650px) {
+    main #videobox video {
+        width: 90%;
+    }
+
+    main #videobox {
+        height: 300px;
+    }
+}
+
+main #videobox p {
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+    text-shadow: 2px 2px 2px rgb(98, 193, 138);
+}
+
+.videos {
+    width: 100%;
+    height: auto;
+    margin: 30px 0px;
+    text-align: center;
+    align-content: center;
+}
+
+.videos #video {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 3px solid rgb(98, 193, 138);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+}
+
+.videos #video:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgb(98, 193, 138), inset 0px 0px 10px rgb(98, 193, 138);
+}
+
+.videos #video video {
+    display: none;
+}
+
+.videos #video img {
+    border-radius: 10px;
+    width: 260px;
+    height: 200px;
+}
+
+.videos #video p {
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid rgb(98, 193, 138);
+    text-align: center;
+    align-content: center;
+}
